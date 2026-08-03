@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-900: #0a1628;
+  --color-navy-800: #111d35;
+  --color-navy-700: #1a2a4a;
+  --color-navy-600: #243b6a;
+  
+  --color-gold-500: #d4a853;
+  --color-gold-400: #e0b964;
+  --color-gold-300: #f0c75e;
+}
+
+:root {
+  --background: var(--color-navy-900);
+  --foreground: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy-700);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy-600);
+}
+
+/* Glassmorphism Utilities */
+@layer utilities {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl rounded-2xl transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply border-white/20 bg-white/10 shadow-2xl;
+  }
+  
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-lg border border-white/5 rounded-2xl;
+  }
+  
+  .gradient-navy {
+    background: linear-gradient(135deg, var(--color-navy-800), var(--color-navy-900));
+  }
+  
+  .gradient-gold-text {
+    background: linear-gradient(to right, var(--color-gold-400), var(--color-gold-300));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+  }
+  
+  /* Category Badges */
+  .badge-tech {
+    @apply bg-blue-500/20 text-blue-300 border border-blue-500/30 px-3 py-1 rounded-full text-xs font-medium tracking-wide;
+  }
+  
+  .badge-cultural {
+    @apply bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-500/30 px-3 py-1 rounded-full text-xs font-medium tracking-wide;
+  }
+  
+  .badge-workshop {
+    @apply bg-green-500/20 text-green-300 border border-green-500/30 px-3 py-1 rounded-full text-xs font-medium tracking-wide;
+  }
+  
+  .badge-guest {
+    @apply bg-amber-500/20 text-amber-300 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-medium tracking-wide;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .skeleton-shimmer {
+    background: linear-gradient(90deg, 
+      var(--color-navy-800) 25%, 
+      var(--color-navy-700) 50%, 
+      var(--color-navy-800) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}

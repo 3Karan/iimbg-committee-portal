@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "name": "Arjun Mehta",
+    "role": "Chairperson",
+    "bio": "Leads the IT Committee with a passion for tech-driven campus transformation.",
+    "image": "/images/avatar_male_1.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "2",
+    "name": "Priya Sharma",
+    "role": "Vice Chairperson",
+    "bio": "Orchestrates cross-functional projects and drives team collaboration.",
+    "image": "/images/avatar_female_1.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "3",
+    "name": "Rohan Gupta",
+    "role": "Technical Lead",
+    "bio": "Full-stack developer building scalable solutions for campus life.",
+    "image": "/images/avatar_male_2.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "4",
+    "name": "Ananya Krishnan",
+    "role": "Design Lead",
+    "bio": "Crafts intuitive user experiences that bridge design and technology.",
+    "image": "/images/avatar_female_2.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "5",
+    "name": "Vikram Singh",
+    "role": "Events Coordinator",
+    "bio": "Plans and executes flagship tech events with precision and creativity.",
+    "image": "/images/avatar_male_3.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "6",
+    "name": "Sneha Patel",
+    "role": "Content & PR Lead",
+    "bio": "Amplifies the committee's voice through compelling content strategy.",
+    "image": "/images/avatar_female_3.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "7",
+    "name": "Aditya Joshi",
+    "role": "Data & Analytics Lead",
+    "bio": "Transforms raw data into actionable insights for campus decisions.",
+    "image": "/images/avatar_male_4.jpg",
+    "linkedin": "#"
+  },
+  {
+    "id": "8",
+    "name": "Kavya Reddy",
+    "role": "Outreach Coordinator",
+    "bio": "Builds partnerships and expands the committee's industry network.",
+    "image": "/images/avatar_female_4.jpg",
+    "linkedin": "#"
+  }
+]

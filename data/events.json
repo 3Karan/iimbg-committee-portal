@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "CodeStorm Hackathon",
+    "category": "Tech",
+    "date": "2026-09-15",
+    "venue": "MDC Auditorium",
+    "description": "A 24-hour coding marathon where top minds tackle real-world problems. Build, innovate, and compete for exciting prizes.",
+    "image": "/images/event_hackathon.jpg",
+    "time": "10:00 AM"
+  },
+  {
+    "id": "2",
+    "name": "Bodh Utsav Cultural Night",
+    "category": "Cultural",
+    "date": "2026-09-28",
+    "venue": "Main Amphitheatre",
+    "description": "A night of vibrant performances celebrating the diverse culture of our campus. Enjoy music, dance, and art from talented students.",
+    "image": "/images/event_cultural.jpg",
+    "time": "07:00 PM"
+  },
+  {
+    "id": "3",
+    "name": "AI & Machine Learning Workshop",
+    "category": "Workshop",
+    "date": "2026-10-05",
+    "venue": "Lab 1",
+    "description": "Dive deep into the world of AI with hands-on sessions led by industry experts. Perfect for beginners and intermediate learners.",
+    "image": "/images/event_workshop.jpg",
+    "time": "02:00 PM"
+  },
+  {
+    "id": "4",
+    "name": "Leadership in the Digital Age",
+    "category": "Guest Lecture",
+    "date": "2026-10-12",
+    "venue": "MDC Auditorium",
+    "description": "An inspiring talk by a renowned tech leader on navigating the challenges and opportunities of digital transformation.",
+    "image": "/images/event_guest_lecture.jpg",
+    "time": "11:00 AM"
+  },
+  {
+    "id": "5",
+    "name": "TechExpo 2026",
+    "category": "Tech",
+    "date": "2026-10-20",
+    "venue": "Campus Grounds",
+    "description": "Explore the latest innovations and projects developed by the brightest minds on campus. A showcase of future technologies.",
+    "image": "/images/event_techfest.jpg",
+    "time": "09:00 AM"
+  },
+  {
+    "id": "6",
+    "name": "Startup Bootcamp",
+    "category": "Workshop",
+    "date": "2026-11-02",
+    "venue": "Incubation Center",
+    "description": "Turn your ideas into viable businesses. Learn the essentials of product development, marketing, and pitching from successful founders.",
+    "image": "/images/event_workshop.jpg",
+    "time": "10:00 AM"
+  },
+  {
+    "id": "7",
+    "name": "Alumni Meet & Networking Gala",
+    "category": "Cultural",
+    "date": "2026-11-15",
+    "venue": "Guest House Lawn",
+    "description": "Reconnect with our esteemed alumni network. A perfect evening to share experiences, seek mentorship, and build lasting connections.",
+    "image": "/images/event_cultural.jpg",
+    "time": "06:00 PM"
+  },
+  {
+    "id": "8",
+    "name": "Future of Finance - Panel Discussion",
+    "category": "Guest Lecture",
+    "date": "2026-11-22",
+    "venue": "Seminar Hall",
+    "description": "A thought-provoking discussion on how FinTech is reshaping the global economy. Featuring top executives from leading financial institutions.",
+    "image": "/images/event_guest_lecture.jpg",
+    "time": "04:00 PM"
+  }
+]
