@@ -20,6 +20,18 @@ A responsive, premium web portal for the IT Committee at IIM Bodh Gaya, built wi
 
 <img width="1917" height="903" alt="image" src="https://github.com/user-attachments/assets/26c76404-9027-41b6-8b1a-6bcc47918540" />
 
+<img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/c50d353b-f122-4cc2-8175-67ec17801697" />
+
+<img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/557a6791-6348-4af6-b3dd-05ceed0d7c53" />
+
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/cbeb2c61-2b43-4218-b111-33df8da63767" />
+
+<img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/a7a9f2e8-9632-41a3-b78f-0023179a9f41" />
+
+
+
+
+
 ---
 
 ## ✨ Completed Features
