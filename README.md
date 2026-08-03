@@ -8,17 +8,17 @@ A responsive, premium web portal for the IT Committee at IIM Bodh Gaya, built wi
 
 | Deliverable | Link |
 |---|---|
-| **Live Portal (Vercel)** | _[Paste your Vercel URL here]_ |
-| **GitHub Repository** | _[Paste your GitHub repo URL here]_ |
-| **Dashboard (Looker Studio)**| _[Paste your Dashboard viewer link here]_ |
-| **Feedback Google Form** | _[Paste your Form link here]_ |
+| **Live Portal (Vercel)** | https://iimbg-committee-portal-one.vercel.app/ |
+| **GitHub Repository** | https://github.com/3Karan/iimbg-committee-portal |
+| **Dashboard (Looker Studio)**| https://datastudio.google.com/reporting/9345ea08-3224-4769-aa19-c492754fba52/page/JgU5F |
+| **Feedback Google Form** | https://docs.google.com/forms/d/e/1FAIpQLScBxf-aR0r4Cynx1zdwoBWe0r5nNNNwmCQOl_zgaCi117kk9Q/viewform |
 | **End-to-End Run (Video)** | _[Paste your 2-minute video link here]_ |
 
 ---
 
 ## 📸 Screenshots
 
-_[Insert a screenshot of your website here. You can just drag and drop an image file into GitHub when editing this README]_
+<img width="1917" height="903" alt="image" src="https://github.com/user-attachments/assets/26c76404-9027-41b6-8b1a-6bcc47918540" />
 
 ---
 
@@ -44,32 +44,6 @@ _[Insert a screenshot of your website here. You can just drag and drop an image 
 ### Prerequisites
 - Node.js 18+ and npm
 
-### Local Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone [Your-GitHub-Repo-URL]
-   cd committee-portal
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Configure Environment Variables:**
-   Rename `.env.local.example` to `.env.local` (or create it) and add your Apps Script URL:
-   ```env
-   NEXT_PUBLIC_APPS_SCRIPT_URL=your_google_apps_script_url_here
-   ```
-
-4. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
 
 ## 🤖 AI Usage
 
