@@ -190,7 +190,7 @@ export default function RegistrationForm() {
             value={formData.name}
             onChange={handleChange}
             onBlur={handleBlur}
-            className={`w-full bg-[#0a1628]/50 border ${errors.name && touched.name ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#d4a853]/50 focus:border-[#d4a853] transition-all`}
+            className={`w-full bg-[#1a0a0e]/50 border ${errors.name && touched.name ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#c5973e]/50 focus:border-[#c5973e] transition-all`}
             placeholder="e.g. Arjun Mehta"
             autoComplete="name"
           />
@@ -210,7 +210,7 @@ export default function RegistrationForm() {
               value={formData.email}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`w-full bg-[#0a1628]/50 border ${errors.email && touched.email ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#d4a853]/50 focus:border-[#d4a853] transition-all`}
+              className={`w-full bg-[#1a0a0e]/50 border ${errors.email && touched.email ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#c5973e]/50 focus:border-[#c5973e] transition-all`}
               placeholder="you@example.com"
               autoComplete="email"
             />
@@ -227,7 +227,7 @@ export default function RegistrationForm() {
               value={formData.phone}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`w-full bg-[#0a1628]/50 border ${errors.phone && touched.phone ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#d4a853]/50 focus:border-[#d4a853] transition-all`}
+              className={`w-full bg-[#1a0a0e]/50 border ${errors.phone && touched.phone ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#c5973e]/50 focus:border-[#c5973e] transition-all`}
               placeholder="9876543210"
               autoComplete="tel"
             />
@@ -247,11 +247,11 @@ export default function RegistrationForm() {
               value={formData.event}
               onChange={handleChange}
               onBlur={handleBlur}
-              className={`w-full bg-[#0a1628]/50 border ${errors.event && touched.event ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#d4a853]/50 focus:border-[#d4a853] transition-all appearance-none cursor-pointer`}
+              className={`w-full bg-[#1a0a0e]/50 border ${errors.event && touched.event ? 'border-red-500' : 'border-white/10'} rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[#c5973e]/50 focus:border-[#c5973e] transition-all appearance-none cursor-pointer`}
             >
-              <option value="" disabled className="bg-[#111d35] text-slate-400">-- Choose an Event --</option>
+              <option value="" disabled className="bg-[#2d1118] text-slate-400">-- Choose an Event --</option>
               {eventsData.map(evt => (
-                <option key={evt.id} value={evt.name} className="bg-[#111d35] text-white">
+                <option key={evt.id} value={evt.name} className="bg-[#2d1118] text-white">
                   {evt.name} — {new Date(evt.date + 'T00:00:00').toLocaleDateString('en-IN', { month: 'short', day: 'numeric' })}
                 </option>
               ))}
@@ -277,7 +277,7 @@ export default function RegistrationForm() {
             value={formData.comments}
             onChange={handleChange}
             rows="4"
-            className="w-full bg-[#0a1628]/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#d4a853]/50 focus:border-[#d4a853] transition-all resize-none"
+            className="w-full bg-[#1a0a0e]/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-[#c5973e]/50 focus:border-[#c5973e] transition-all resize-none"
             placeholder="Any questions or special requirements?"
           />
         </div>
@@ -286,11 +286,11 @@ export default function RegistrationForm() {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="w-full py-4 bg-gradient-to-r from-[#d4a853] to-[#f0c75e] text-[#0a1628] font-bold rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,168,83,0.4)] hover:scale-[1.01] focus:outline-none disabled:opacity-70 disabled:hover:scale-100 disabled:cursor-not-allowed flex justify-center items-center gap-2 text-lg"
+          className="w-full py-4 bg-gradient-to-r from-[#c5973e] to-[#e8be5a] text-[#1a0a0e] font-bold rounded-xl transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,168,83,0.4)] hover:scale-[1.01] focus:outline-none disabled:opacity-70 disabled:hover:scale-100 disabled:cursor-not-allowed flex justify-center items-center gap-2 text-lg"
         >
           {status === 'loading' ? (
             <>
-              <svg className="animate-spin h-5 w-5 text-[#0a1628]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <svg className="animate-spin h-5 w-5 text-[#1a0a0e]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>

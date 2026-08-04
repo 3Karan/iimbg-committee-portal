@@ -1,19 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-900: #0a1628;
-  --color-navy-800: #111d35;
-  --color-navy-700: #1a2a4a;
-  --color-navy-600: #243b6a;
+  /* IIM Bodh Gaya Institutional Palette */
+  /* Maroon tones — inspired by Buddhist monastery robes and IIM BG branding */
+  --color-maroon-950: #1a0a0e;
+  --color-maroon-900: #2d1118;
+  --color-maroon-800: #4a1a25;
+  --color-maroon-700: #6b2534;
+  --color-maroon-600: #8b3244;
   
-  --color-gold-500: #d4a853;
-  --color-gold-400: #e0b964;
-  --color-gold-300: #f0c75e;
+  /* Gold/Saffron — inspired by Buddhist heritage and the Bodhi tree */
+  --color-gold-500: #c5973e;
+  --color-gold-400: #d4a853;
+  --color-gold-300: #e8be5a;
+  
+  /* Warm ivory for text */
+  --color-ivory-100: #faf5eb;
+  --color-ivory-200: #f0e6d2;
+  --color-ivory-300: #ddd0b8;
 }
 
 :root {
-  --background: var(--color-navy-900);
-  --foreground: #f8fafc;
+  --background: var(--color-maroon-950);
+  --foreground: var(--color-ivory-100);
 }
 
 html {
@@ -37,16 +46,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-navy-900);
+  background: var(--color-maroon-950);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-navy-700);
+  background: var(--color-maroon-700);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-navy-600);
+  background: var(--color-maroon-600);
 }
 
 /* Glassmorphism Utilities */
@@ -63,19 +72,19 @@ h1, h2, h3, h4, h5, h6 {
     @apply bg-black/20 backdrop-blur-lg border border-white/5 rounded-2xl;
   }
   
-  .gradient-navy {
-    background: linear-gradient(135deg, var(--color-navy-800), var(--color-navy-900));
+  .gradient-maroon {
+    background: linear-gradient(135deg, var(--color-maroon-800), var(--color-maroon-950));
   }
   
   .gradient-gold-text {
-    background: linear-gradient(to right, var(--color-gold-400), var(--color-gold-300));
+    background: linear-gradient(to right, var(--color-gold-500), var(--color-gold-300));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-glow {
-    text-shadow: 0 0 20px rgba(212, 168, 83, 0.3);
+    text-shadow: 0 0 20px rgba(197, 151, 62, 0.3);
   }
   
   /* Category Badges */
@@ -140,6 +149,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
 @layer utilities {
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out forwards;
@@ -153,11 +171,15 @@ h1, h2, h3, h4, h5, h6 {
     animation: float 4s ease-in-out infinite;
   }
 
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
   .skeleton-shimmer {
     background: linear-gradient(90deg, 
-      var(--color-navy-800) 25%, 
-      var(--color-navy-700) 50%, 
-      var(--color-navy-800) 75%
+      var(--color-maroon-800) 25%, 
+      var(--color-maroon-700) 50%, 
+      var(--color-maroon-800) 75%
     );
     background-size: 200% 100%;
     animation: shimmer 2s infinite;

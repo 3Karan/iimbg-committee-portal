@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a1628] text-white">
+      <body className="min-h-full flex flex-col bg-[#1a0a0e] text-[#faf5eb]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -1,66 +1,138 @@
 [
-  {
-    "id": "1",
-    "name": "Arjun Mehta",
-    "role": "Chairperson",
-    "bio": "Leads the IT Committee with a passion for tech-driven campus transformation.",
-    "image": "/images/avatar_male_1.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "2",
-    "name": "Priya Sharma",
-    "role": "Vice Chairperson",
-    "bio": "Orchestrates cross-functional projects and drives team collaboration.",
-    "image": "/images/avatar_female_1.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "3",
-    "name": "Rohan Gupta",
-    "role": "Technical Lead",
-    "bio": "Full-stack developer building scalable solutions for campus life.",
-    "image": "/images/avatar_male_2.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "4",
-    "name": "Ananya Krishnan",
-    "role": "Design Lead",
-    "bio": "Crafts intuitive user experiences that bridge design and technology.",
-    "image": "/images/avatar_female_2.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "5",
-    "name": "Vikram Singh",
-    "role": "Events Coordinator",
-    "bio": "Plans and executes flagship tech events with precision and creativity.",
-    "image": "/images/avatar_male_3.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "6",
-    "name": "Sneha Patel",
-    "role": "Content & PR Lead",
-    "bio": "Amplifies the committee's voice through compelling content strategy.",
-    "image": "/images/avatar_female_3.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "7",
-    "name": "Aditya Joshi",
-    "role": "Data & Analytics Lead",
-    "bio": "Transforms raw data into actionable insights for campus decisions.",
-    "image": "/images/avatar_male_4.jpg",
-    "linkedin": "#"
-  },
-  {
-    "id": "8",
-    "name": "Kavya Reddy",
-    "role": "Outreach Coordinator",
-    "bio": "Builds partnerships and expands the committee's industry network.",
-    "image": "/images/avatar_female_4.jpg",
-    "linkedin": "#"
-  }
+    {
+        "id":  "1",
+        "name":  "Mona Gurjar",
+        "linkedin":  "#",
+        "image":  "/images/team/mona-gurjar-C6RKl4GE.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "2",
+        "name":  "Shantanu Ghosh",
+        "linkedin":  "#",
+        "image":  "/images/team/shantanu-ghosh-CEQW8btj.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "3",
+        "name":  "Stuti Mohta",
+        "linkedin":  "#",
+        "image":  "/images/team/stuti-mohta-ClbD4IBZ.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "4",
+        "name":  "Charan Vijay",
+        "linkedin":  "#",
+        "image":  "/images/team/charan-vijay-B2G0FwJJ.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "5",
+        "name":  "Avi Agarwal",
+        "linkedin":  "#",
+        "image":  "/images/team/avi-agarwal-DPFaVWbf.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "6",
+        "name":  "Yati Varshney",
+        "linkedin":  "#",
+        "image":  "/images/team/yati-varshney-C28oz6Zo.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "7",
+        "name":  "Lakshman K R",
+        "linkedin":  "#",
+        "image":  "/images/team/lakshman-kr-CnaTr_Qg.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "8",
+        "name":  "Harshvardhan Jadhav",
+        "linkedin":  "#",
+        "image":  "/images/team/harshvardhan-jadhav-CVIPCN7M.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "9",
+        "name":  "Stuti Verma",
+        "linkedin":  "#",
+        "image":  "/images/team/stuti-verma-CB7zef-D.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "10",
+        "name":  "Kirti Bhushan Nonhare",
+        "linkedin":  "#",
+        "image":  "/images/team/kirti-bhushan-B-YP9x1G.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "11",
+        "name":  "Aaditya Gupta",
+        "linkedin":  "#",
+        "image":  "/images/team/aaditya-gupta-BwxWnIZy.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "12",
+        "name":  "Balaji G",
+        "linkedin":  "#",
+        "image":  "/images/team/balaji-g-COygM67m.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "13",
+        "name":  "Divyansh Verma",
+        "linkedin":  "#",
+        "image":  "/images/team/divyansh-verma-2qHA97Hz.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "14",
+        "name":  "Priyansh Choudhary",
+        "linkedin":  "#",
+        "image":  "/images/team/priyansh-choudhary-CthTpPEn.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "15",
+        "name":  "Jeet Jadav",
+        "linkedin":  "#",
+        "image":  "/images/team/jeet-jadav-Dfo5JDSn.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "16",
+        "name":  "Pal Shivam Jaiprakash",
+        "linkedin":  "#",
+        "image":  "/images/team/pal-shivam-DWE_NlwE.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    },
+    {
+        "id":  "17",
+        "name":  "Laraib Muttaqui",
+        "linkedin":  "#",
+        "image":  "/images/team/laraib-muttaqi-C8l5VLSP.jpg",
+        "role":  "IT Committee Member",
+        "bio":  "Student Member of the IT Committee, contributing to digital initiatives."
+    }
 ]

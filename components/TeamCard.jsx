@@ -1,14 +1,27 @@
 import Image from 'next/image';
 
+/**
+ * Generates a professional initials-based avatar URL.
+ * Uses the ui-avatars.com service for clean, consistent initials.
+ */
+function getInitialsAvatar(name) {
+  const encoded = encodeURIComponent(name);
+  return `https://ui-avatars.com/api/?name=${encoded}&size=240&background=4a1a25&color=e8be5a&bold=true&font-size=0.4`;
+}
+
 export default function TeamCard({ member }) {
+  // Use the local image if it exists, otherwise fall back to initials avatar
+  const avatarSrc = member.image || getInitialsAvatar(member.name);
+
   return (
-    <div className="group flex flex-col items-center p-8 bg-white/[0.03] backdrop-blur-lg border border-white/10 rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(212,168,83,0.15)] hover:border-[#d4a853]/30">
+    <div className="group flex flex-col items-center p-8 bg-white/[0.04] backdrop-blur-lg border border-white/10 rounded-3xl transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(197,151,62,0.15)] hover:border-[#c5973e]/30">
+      {/* Avatar */}
       <div className="relative mb-6">
-        <div className="absolute inset-0 bg-[#d4a853] rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300" />
-        <div className="relative w-[120px] h-[120px] rounded-full overflow-hidden border-2 border-[#d4a853] p-1">
-          <div className="relative w-full h-full rounded-full overflow-hidden bg-[#111d35]">
+        <div className="absolute inset-0 bg-[#c5973e] rounded-full blur opacity-20 group-hover:opacity-40 transition-opacity duration-300" />
+        <div className="relative w-[120px] h-[120px] rounded-full overflow-hidden border-2 border-[#c5973e] p-1">
+          <div className="relative w-full h-full rounded-full overflow-hidden bg-[#2d1118]">
             <Image
-              src={member.image || `https://placehold.co/240x240/111d35/d4a853?text=${encodeURIComponent(member.name.charAt(0))}`}
+              src={avatarSrc}
               alt={member.name}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -18,21 +31,26 @@ export default function TeamCard({ member }) {
         </div>
       </div>
       
-      <h3 className="text-xl font-bold text-white mb-1 text-center">{member.name}</h3>
-      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#d4a853]/10 text-[#f0c75e] border border-[#d4a853]/20 mb-4 text-center">
+      {/* Name */}
+      <h3 className="text-xl font-bold text-[#faf5eb] mb-1 text-center">{member.name}</h3>
+      
+      {/* Role Badge */}
+      <span className="px-3 py-1 text-xs font-semibold rounded-full bg-[#c5973e]/10 text-[#e8be5a] border border-[#c5973e]/20 mb-4 text-center">
         {member.role}
       </span>
       
-      <p className="text-sm text-slate-400 text-center mb-6 line-clamp-3">
+      {/* Bio */}
+      <p className="text-sm text-[#ddd0b8]/70 text-center mb-6 line-clamp-3">
         {member.bio}
       </p>
       
+      {/* LinkedIn */}
       {member.linkedin && (
         <a 
           href={member.linkedin} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="mt-auto text-slate-300 hover:text-[#d4a853] transition-colors p-2 rounded-full hover:bg-white/5"
+          className="mt-auto text-[#ddd0b8] hover:text-[#c5973e] transition-colors p-2 rounded-full hover:bg-white/5"
           aria-label={`${member.name}'s LinkedIn`}
         >
           <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">

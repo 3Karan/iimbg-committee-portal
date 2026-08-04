@@ -25,22 +25,24 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#0a1628]/80 backdrop-blur-md shadow-lg shadow-black/20' : 'bg-transparent'
+        scrolled ? 'bg-[#1a0a0e]/90 backdrop-blur-md shadow-lg shadow-black/30' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
+          {/* Logo / Branding */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex flex-col">
-              <span className="text-xs text-slate-300 font-medium tracking-wider uppercase">
+              <span className="text-xs text-[#ddd0b8] font-medium tracking-wider uppercase">
                 IIM Bodh Gaya
               </span>
-              <span className="text-xl font-bold bg-gradient-to-r from-[#d4a853] to-[#f0c75e] bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-[#c5973e] to-[#e8be5a] bg-clip-text text-transparent">
                 IT Committee
               </span>
             </Link>
           </div>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => {
@@ -50,12 +52,12 @@ export default function Navbar() {
                     key={link.name}
                     href={link.path}
                     className={`relative px-3 py-2 text-sm font-medium transition-colors ${
-                      isActive ? 'text-[#f0c75e]' : 'text-slate-200 hover:text-white'
+                      isActive ? 'text-[#e8be5a]' : 'text-[#f0e6d2] hover:text-white'
                     } group`}
                   >
                     {link.name}
                     <span
-                      className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#d4a853] transition-transform duration-300 origin-left ${
+                      className={`absolute left-0 bottom-0 w-full h-[2px] bg-[#c5973e] transition-transform duration-300 origin-left ${
                         isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                       }`}
                     ></span>
@@ -65,11 +67,12 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* Mobile Hamburger */}
           <div className="-mr-2 flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-slate-200 hover:text-white hover:bg-white/10 focus:outline-none transition-colors"
+              className="inline-flex items-center justify-center p-2 rounded-md text-[#f0e6d2] hover:text-white hover:bg-white/10 focus:outline-none transition-colors"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -88,8 +91,9 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute w-full bg-[#0a1628]/95 backdrop-blur-xl border-b border-white/10 overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`md:hidden absolute w-full bg-[#1a0a0e]/95 backdrop-blur-xl border-b border-white/10 overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
         }`}
         id="mobile-menu"
@@ -104,8 +108,8 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-4 text-base font-medium rounded-md text-center transition-colors ${
                   isActive
-                    ? 'bg-white/10 text-[#f0c75e]'
-                    : 'text-slate-300 hover:bg-white/5 hover:text-white'
+                    ? 'bg-white/10 text-[#e8be5a]'
+                    : 'text-[#ddd0b8] hover:bg-white/5 hover:text-white'
                 }`}
               >
                 {link.name}

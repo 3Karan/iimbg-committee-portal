@@ -35,10 +35,10 @@ export default function HomePage() {
       {/* Events Section */}
       <section id="events" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#faf5eb] mb-3">
             Upcoming <span className="gradient-gold-text">Events</span>
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-[#ddd0b8]/70 text-lg">
             Discover and register for our latest events, workshops, and lectures.
           </p>
         </div>
